@@ -2,7 +2,7 @@ from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
-@app.route("/",methods=["GET","POST"])
+@app.route("/polican",methods=["GET","POST"])
 def vysocina():
     if request.method=="POST":
         for i in ["username","username1","username2","username3"]:
